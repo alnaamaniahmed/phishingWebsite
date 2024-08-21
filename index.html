@@ -115,9 +115,9 @@
           alt="Logo"
           src="https://ol.om/wp-content/uploads/2024/07/IMG_7139.png"
         />
-        <form method="POST" action="{{.URL}}">
-        <input placeholder="Username" type="text" />
-        <input placeholder="Password" type="password" /><button type="submit">
+        <form action="/submit" method="POST">
+        <input placeholder="Username" type="text" name="username" required />
+        <input placeholder="Password" type="password" name="password" required /><button type="submit">
           Login
         </button>
         </form>

